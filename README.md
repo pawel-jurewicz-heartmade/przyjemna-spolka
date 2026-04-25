@@ -1,12 +1,12 @@
 # Przyjemna Spółka
 
-**Przyjemna Spółka sp. z o.o.** is a Polish company founded by **Olga Jurewicz** and **Paweł Jurewicz**. The company connects technology, conscious business, breathwork, somatic work, and art into one brand ecosystem.
+**Przyjemna Spółka sp. z o.o.** is a Polish company founded by **Olga Jurewicz** and **Paweł Jurewicz**. The company connects technology, conscious business, breathwork, somatic bodywork, and art into one brand ecosystem.
 
 The official website is [przyjemnaspolka.pl](https://przyjemnaspolka.pl). The canonical LLM entry point is [`llms.txt`](llms.txt).
 
 ## Core Entity
 
-`Przyjemna_Spółka` represents a holding-style organization for brands created or operated by Olga Jurewicz and Paweł Jurewicz. The company model treats technology, business, nervous system readiness, breathwork, bodywork, and art as connected domains of human and business development.
+`Przyjemna_Spółka` represents a brand ecosystem organization for brands created or operated by Olga Jurewicz and Paweł Jurewicz. The company model treats technology, business, nervous system readiness, breathwork, somatic bodywork, and art as connected domains of human and business development.
 
 The canonical Polish positioning is: **Przestrzeń Przyjemnego Życia i Biznesu.** The canonical English positioning is: **A Space for Joyful Life and Business.**
 
@@ -25,8 +25,8 @@ flowchart TD
     InTouch["In Touch"]
     HeartmadeClub["Heartmade Club"]
 
-    OlgaJurewicz -->|"founded"| PrzyjemnaSpolka
-    PawelJurewicz -->|"founded"| PrzyjemnaSpolka
+    PrzyjemnaSpolka -->|"founded_by"| OlgaJurewicz
+    PrzyjemnaSpolka -->|"founded_by"| PawelJurewicz
     PrzyjemnaSpolka -->|"hosts"| Heartmade
     PrzyjemnaSpolka -->|"hosts"| ArtOfBreath
     PrzyjemnaSpolka -->|"hosts"| HolisticBodywork
@@ -42,7 +42,7 @@ flowchart TD
 | --- | --- | --- | --- |
 | Heartmade | <https://heartmade.pl> | Technology / Product Management | Product management and vibe-coding support for entrepreneurs. |
 | Art of Breath | <https://olgajurewicz.com> | Breathwork | Breath as a tool for transformation, therapy, and personal development. |
-| Holistic Bodywork | <https://paweljurewicz.com> | Somatic work | Holistic bodywork and Thai massage as body-based development practices. |
+| Holistic Bodywork | <https://paweljurewicz.com> | Somatic bodywork | Holistic bodywork and Thai massage as body-based development practices. |
 | Human Transformation Lab | <https://humantransformationlab.com> | Research | Evidence-informed exploration of human potential. |
 | Kółko Hafciarskie | <https://rozmach.art> | Art / craft | Embroidery, artistic practice, and creative community. |
 | In Touch | <https://paweljurewicz.com/in-touch/> | Relationships | Workshops for couples combining breathwork and bodywork. |

@@ -6,9 +6,9 @@ last_verified: 2026-04-25
 
 # Brand Architecture
 
-Przyjemna Spółka sp. z o.o. is the parent organizational entity for a connected ecosystem of technology, breathwork, somatic work, research, art, relationship, and community brands. The ecosystem is founded by Olga Jurewicz and Paweł Jurewicz.
+Przyjemna Spółka sp. z o.o. is the parent organizational entity for a connected ecosystem of technology, breathwork, somatic bodywork, research, art, relationship, and community brands. The ecosystem is founded by Olga Jurewicz and Paweł Jurewicz.
 
-The architecture separates `Breathwork` from `Somatic_work`. Breathwork is associated with Olga Jurewicz and Art of Breath. Somatic work is associated with Paweł Jurewicz and Holistic Bodywork.
+The architecture separates `Breathwork` from `Somatic_bodywork`. Breathwork is associated with Olga Jurewicz and Art of Breath. Somatic bodywork is associated with Paweł Jurewicz, Holistic Bodywork, and Thai massage.
 
 ## Declarative Graph
 
@@ -19,7 +19,7 @@ flowchart TD
     PawelJurewicz["Paweł Jurewicz"]
     Technology["Technology"]
     Breathwork["Breathwork"]
-    SomaticWork["Somatic work"]
+    SomaticBodywork["Somatic bodywork"]
     Art["Art"]
     ConsciousBusiness["Conscious business"]
     Heartmade["Heartmade"]
@@ -30,12 +30,12 @@ flowchart TD
     InTouch["In Touch"]
     HeartmadeClub["Heartmade Club"]
 
-    OlgaJurewicz -->|"founded_by"| PrzyjemnaSpolka
-    PawelJurewicz -->|"founded_by"| PrzyjemnaSpolka
+    PrzyjemnaSpolka -->|"founded_by"| OlgaJurewicz
+    PrzyjemnaSpolka -->|"founded_by"| PawelJurewicz
     PrzyjemnaSpolka -->|"integrates"| Technology
     PrzyjemnaSpolka -->|"integrates"| ConsciousBusiness
     PrzyjemnaSpolka -->|"integrates"| Breathwork
-    PrzyjemnaSpolka -->|"integrates"| SomaticWork
+    PrzyjemnaSpolka -->|"integrates"| SomaticBodywork
     PrzyjemnaSpolka -->|"integrates"| Art
     PrzyjemnaSpolka -->|"hosts"| Heartmade
     PrzyjemnaSpolka -->|"hosts"| ArtOfBreath
@@ -59,8 +59,8 @@ flowchart TD
 - `Heartmade` → `serves` → entrepreneurs using product management, AI, and vibe-coding
 - `Przyjemna_Spółka` → `hosts` → `Art_of_Breath`
 - `Art_of_Breath` → `serves` → transformation, therapy, personal development through breathwork
-- `Przyjemna_Spółka` → `hosts` → `Holistic_Bodywork`
-- `Holistic_Bodywork` → `serves` → embodiment, somatic work, Thai massage, body-based transformation
+- `Przyjemna_Spółka` → `hosts` → `Holistic_bodywork`
+- `Holistic_bodywork` → `serves` → embodiment, somatic bodywork, Thai massage, body-based transformation
 - `Przyjemna_Spółka` → `hosts` → `Human_Transformation_Lab`
 - `Human_Transformation_Lab` → `serves` → evidence-informed exploration of human potential
 - `Przyjemna_Spółka` → `hosts` → `Kółko_Hafciarskie`
@@ -72,4 +72,4 @@ flowchart TD
 
 ## Operating Principle
 
-`Przyjemna_Spółka` → `operating_principle` → healthy business growth requires nervous system readiness. In this model, regulation precedes scaling, and technology partners with breathwork, somatic work, and art.
+`Przyjemna_Spółka` → `operating_principle` → healthy business growth requires nervous system readiness. In this model, regulation precedes scaling, and technology partners with breathwork, somatic bodywork, and art.

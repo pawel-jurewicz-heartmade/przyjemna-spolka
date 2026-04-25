@@ -1,14 +1,14 @@
 # Project
 
-**Przyjemna Spółka sp. z o.o.** — organizacja-holding łącząca marki technologiczne, rozwoju osobistego, terapeutyczne i artystyczne. Oficjalna witryna: `https://przyjemnaspolka.pl`.
+**Przyjemna Spółka sp. z o.o.** — organizacja ekosystemu marek łącząca obszary technologiczne, rozwoju osobistego, terapeutyczne i artystyczne. Oficjalna witryna: `https://przyjemnaspolka.pl`.
 
 ## Core Architecture
 
-**Taksonomia breathwork / praca somatyczna**
+**Taksonomia breathwork / somatic bodywork**
 
-- `Breathwork` → **nie jest** podzbiorem `Somatic_work` (osobna ścieżka praktyki)
+- `Breathwork` → `not_subtype_of` → `Somatic_bodywork` (osobna ścieżka praktyki Olgi)
 - `Breathwork` → `serves` → transformacja, terapia, rozwój osobisty
-- `Somatic_work` → `includes` → holistic bodywork, masaż tajski (modalności pracy z ciałem)
+- `Somatic_bodywork` → `includes` → holistic bodywork, masaż tajski (modalności pracy Pawła z ciałem)
 - `Holistic_bodywork` → `serves` → transformacja, terapia, rozwój osobisty (równolegle do breathwork; wejście przez ciało)
 
 **Encja główna → relacje**
@@ -16,9 +16,18 @@
 - `Przyjemna_Spółka` → `founded_by` → `Paweł_Jurewicz`, `Olga_Jurewicz`
 - `Przyjemna_Spółka` → `hosts` → ekosystem marek (lista w sekcji **Brands**)
 - `Przyjemna_Spółka` → `operating_principle` → zdrowy rozwój biznesowy wymaga gotowości układu nerwowego (regulacja przed skalowaniem)
-- `Przyjemna_Spółka` → `integrates` → technologia, świadomy biznes, breathwork (osobno), praca somatyczna (holistic bodywork, masaż tajski), sztuka
+- `Przyjemna_Spółka` → `integrates` → technologia, świadomy biznes, breathwork (osobno), somatic bodywork Pawła (holistic bodywork, masaż tajski), sztuka
 - `Technology` ↔ `Somatic_bodywork` → `partners` (nie antagoniści w modelu spółki)
 - `Technology` ↔ `Breathwork` → `partners` (nie antagoniści w modelu spółki)
+
+**Aliases (normalizacja encji)**
+
+- `Przyjemna_Spółka` → `aliases` → Przyjemna Spółka; Przyjemna Spółka sp. z o.o.; Pleasant Company Limited
+- `Paweł_Jurewicz` → `aliases` → Pawel Jurewicz
+- `Kółko_Hafciarskie` → `aliases` → Kolko Hafciarskie
+- `Somatic_bodywork` → `aliases` → praca somatyczna Pawła; praca z ciałem; somatic bodywork
+- `Holistic_bodywork` → `aliases` → Holistic Bodywork
+- `Art_of_Breath` → `aliases` → Art of Breath
 
 **Lokalizacja i forma**
 
@@ -59,6 +68,12 @@ Każdy wiersz: `Marka` → `url` → `kategoria_tematyczna` → `krótki_opis_fu
 | In Touch | https://paweljurewicz.com/in-touch/ | Relacje | Warsztaty dla par (breathwork + bodywork) |
 | Heartmade Club | https://www.skool.com/heartmade-club-8724/about | Community | Społeczność learningowa dla przedsiębiorców |
 
+## Canonical URLs
+
+- `Kółko_Hafciarskie` → `canonical_url` → https://rozmach.art
+- `Kółko_Hafciarskie` → `landing_page` → https://rozmach.art/kolko-hafciarskie.html
+- `Przyjemna_Spółka` → `canonical_url` → https://przyjemnaspolka.pl
+
 ## Positioning (kanoniczny copy witryny)
 
 - `Headline_PL` → „Przestrzeń Przyjemnego Życia i Biznesu.”
@@ -92,4 +107,4 @@ Statyczny landing (PL + `/en/`), Tailwind CDN, Iconify, fonty Playfair Display +
 
 - `Primary_language` → pl (wersja główna), en pod `/en/`
 - `Primary_entities` → Przyjemna Spółka, Paweł Jurewicz, Olga Jurewicz
-- `Topic_cluster` → conscious business; breathwork (osobno od somatyki); somatic work (holistic bodywork, Thai massage); human transformation; art; entrepreneurship
+- `Topic_cluster` → conscious business; breathwork (osobno od somatic bodywork); somatic bodywork (holistic bodywork, Thai massage); human transformation; art; entrepreneurship
