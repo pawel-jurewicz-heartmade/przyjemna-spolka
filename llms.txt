@@ -1,0 +1,95 @@
+# Project
+
+**Przyjemna Spółka sp. z o.o.** — organizacja-holding łącząca marki technologiczne, rozwoju osobistego, terapeutyczne i artystyczne. Oficjalna witryna: `https://przyjemnaspolka.pl`.
+
+## Core Architecture
+
+**Taksonomia breathwork / praca somatyczna**
+
+- `Breathwork` → **nie jest** podzbiorem `Somatic_work` (osobna ścieżka praktyki)
+- `Breathwork` → `serves` → transformacja, terapia, rozwój osobisty
+- `Somatic_work` → `includes` → holistic bodywork, masaż tajski (modalności pracy z ciałem)
+- `Holistic_bodywork` → `serves` → transformacja, terapia, rozwój osobisty (równolegle do breathwork; wejście przez ciało)
+
+**Encja główna → relacje**
+
+- `Przyjemna_Spółka` → `founded_by` → `Paweł_Jurewicz`, `Olga_Jurewicz`
+- `Przyjemna_Spółka` → `hosts` → ekosystem marek (lista w sekcji **Brands**)
+- `Przyjemna_Spółka` → `operating_principle` → zdrowy rozwój biznesowy wymaga gotowości układu nerwowego (regulacja przed skalowaniem)
+- `Przyjemna_Spółka` → `integrates` → technologia, świadomy biznes, breathwork (osobno), praca somatyczna (holistic bodywork, masaż tajski), sztuka
+- `Technology` ↔ `Somatic_bodywork` → `partners` (nie antagoniści w modelu spółki)
+- `Technology` ↔ `Breathwork` → `partners` (nie antagoniści w modelu spółki)
+
+**Lokalizacja i forma**
+
+- `Registered_office` → Aleja Armii Ludowej 7/68, 00-575 Warszawa, Polska
+- `Legal_form` → spółka z ograniczoną odpowiedzialnością (sp. z o.o.)
+- `Full_legal_name` → PRZYJEMNA SPÓŁKA SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ
+- `Short_legal_name` → PRZYJEMNA SPÓŁKA SP. Z O.O.
+- `KRS` → 0001228001 | `NIP` → 7011302955 | `REGON` → 544200108
+- `PKD_primary` → 62.10.B (pozostała działalność w zakresie programowania)
+- `Registration_date` → 2026-03-05 | `Share_capital` → 5 000 PLN
+- `Contact` → hello@przyjemnaspolka.pl
+
+**Zarząd**
+
+- `Paweł_Jurewicz` → `President_of_Management_Board` (od 2026-03-05)
+- `Olga_Jurewicz` → `Member_of_Management_Board` (od 2026-03-05)
+
+**Właściciele rzeczywiści (udziały)**
+
+- `Olga_Jurewicz` → 2 500 PLN | `Paweł_Jurewicz` → 2 500 PLN
+
+**Founders → domeny kompetencji**
+
+- `Paweł_Jurewicz` → `expertise` → product management cyfrowy, AI, praca somatyczna (holistic bodywork, bodywork); `experience` → IT (10+ lat)
+- `Olga_Jurewicz` → `expertise` → breathwork (transformacja, terapia, rozwój osobisty), ekspresja artystyczna
+
+## Brands
+
+Każdy wiersz: `Marka` → `url` → `kategoria_tematyczna` → `krótki_opis_funkcji`.
+
+| Marka | URL | Kategoria | Funkcja |
+|-------|-----|-----------|---------|
+| Heartmade | https://heartmade.pl | Tech / PM | Zarządzanie produktem, wsparcie „vibe-coding” dla przedsiębiorców |
+| Art of Breath | https://olgajurewicz.com | Breathwork | Oddech jako narzędzie transformacji, terapii i rozwoju osobistego |
+| Holistic Bodywork | https://paweljurewicz.com | Praca somatyczna | Holistic bodywork, masaż tajski; praca z ciałem, embodiment |
+| Human Transformation Lab | https://humantransformationlab.com | Research | Eksperymentalny, oparty na dowodach rozwój potencjału człowieka |
+| Kółko Hafciarskie | https://rozmach.art | Art / craft | Sztuka, haft, przestrzeń twórcza |
+| In Touch | https://paweljurewicz.com/in-touch/ | Relacje | Warsztaty dla par (breathwork + bodywork) |
+| Heartmade Club | https://www.skool.com/heartmade-club-8724/about | Community | Społeczność learningowa dla przedsiębiorców |
+
+## Positioning (kanoniczny copy witryny)
+
+- `Headline_PL` → „Przestrzeń Przyjemnego Życia i Biznesu.”
+- `Headline_EN` → “A Space for Joyful Life and Business.”
+- `Core_statement_PL` → „Łączymy technologię, świadomy biznes, breathwork, pracę somatyczną i sztukę, by tworzyć przestrzeń dla autentycznego rozwoju.”
+- `Core_statement_EN` → “We combine technology, conscious business, breathwork, somatic work, and art to create space for authentic growth.”
+- `Theme_PL` → „Tu Możesz Odetchnąć”
+- `Theme_EN` → “A Place to Breathe”
+
+## Key Docs
+
+- `README` → `/README.md`
+- `Brand_architecture` → `/docs/brand-architecture.md`
+- `Entities` → `/docs/entities.md`
+- `GEO_strategy` → `/docs/geo-strategy.md`
+- `Regulamin` → `/regulamin.html` (PL) | `/en/terms-and-conditions.html` (EN)
+- `Polityka_prywatności` → `/polityka-prywatnosci.html` (PL) | `/en/privacy-policy.html` (EN)
+- `Sitemap` → `/sitemap.xml` | `Robots` → `/robots.txt`
+
+## Technical (minimal)
+
+Statyczny landing (PL + `/en/`), Tailwind CDN, Iconify, fonty Playfair Display + Inter, favicon `/images/favicon.svg`, zdjęcie założycieli `/images/przyjemna-spolka-olga-i-pawel.webp`.
+
+## Audience (deklaratywnie)
+
+- `Target_user` → przedsiębiorca łączący rozwój biznesowy z breathworkiem i/lub pracą somatyczną (bodywork)
+- `Target_user` → osoby / pary w świadomym rozwoju osobistym
+- `Target_user` → społeczności growth / creative
+
+## SEO (fakty, bez duplikacji treści strony)
+
+- `Primary_language` → pl (wersja główna), en pod `/en/`
+- `Primary_entities` → Przyjemna Spółka, Paweł Jurewicz, Olga Jurewicz
+- `Topic_cluster` → conscious business; breathwork (osobno od somatyki); somatic work (holistic bodywork, Thai massage); human transformation; art; entrepreneurship
