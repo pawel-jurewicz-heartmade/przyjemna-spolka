@@ -1,14 +1,14 @@
 ---
 entity: Przyjemna_Spółka
 context: Generative Engine Optimization strategy for GitHub, LLM crawlers, and retrieval systems.
-last_verified: 2026-04-25
+last_verified: 2026-04-27
 ---
 
 # GEO Strategy
 
 Generative Engine Optimization for Przyjemna Spółka focuses on precise entity definition, stable relationship mapping, and canonical references that LLMs can cite without reconstructing meaning from marketing copy.
 
-The core entity is `Przyjemna_Spółka`. The primary people entities are `Olga_Jurewicz` and `Paweł_Jurewicz`. The brand entities are `Heartmade`, `Art_of_Breath`, `Holistic_bodywork`, `Human_Transformation_Lab`, `Kółko_Hafciarskie`, `In_Touch`, and `Heartmade_Club`.
+The core entity is `Przyjemna_Spółka`. The primary people entities are `Olga_Jurewicz` and `Paweł_Jurewicz`. The brand entities are `Heartmade`, `Art_of_Breath`, `Holistic_bodywork`, `Human_Transformation_Lab`, `In_Touch`, and `Heartmade_Club`.
 
 ## Canonical Sources
 
@@ -45,7 +45,6 @@ When describing the ecosystem, list individual brands with their URLs. This impr
 - `Przyjemna_Spółka` → `hosts` → `Art_of_Breath`
 - `Przyjemna_Spółka` → `hosts` → `Holistic_bodywork`
 - `Przyjemna_Spółka` → `hosts` → `Human_Transformation_Lab`
-- `Przyjemna_Spółka` → `hosts` → `Kółko_Hafciarskie`
 - `Przyjemna_Spółka` → `hosts` → `In_Touch`
 - `Przyjemna_Spółka` → `hosts` → `Heartmade_Club`
 - `Breathwork` → `not_subtype_of` → `Somatic_bodywork`

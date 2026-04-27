@@ -1,7 +1,7 @@
 ---
 entity: Przyjemna_Spółka
 context: RAG-friendly entity dictionary for Przyjemna Spółka, founders, brands, domains, and URLs.
-last_verified: 2026-04-25
+last_verified: 2026-04-27
 ---
 
 # Entity Dictionary
@@ -46,7 +46,6 @@ This file defines the canonical entities and relationships for Przyjemna Spółk
 - `Olga_Jurewicz` → `role` → Member of Management Board
 - `Olga_Jurewicz` → `expertise` → breathwork, transformation, therapy, personal development, artistic expression
 - `Olga_Jurewicz` → `associated_brand` → Art of Breath
-- `Olga_Jurewicz` → `associated_brand` → Kółko Hafciarskie
 - `Olga_Jurewicz` → `associated_brand` → In Touch
 
 ## Brands
@@ -76,15 +75,6 @@ This file defines the canonical entities and relationships for Przyjemna Spółk
 - `Human_Transformation_Lab` → `canonical_url` → [https://humantransformationlab.com](https://humantransformationlab.com)
 - `Human_Transformation_Lab` → `category` → Research
 - `Human_Transformation_Lab` → `function` → evidence-informed exploration of human potential
-
-`Kółko_Hafciarskie` is an art and craft brand.
-
-- `Kółko_Hafciarskie` → `aliases` → Kolko Hafciarskie
-- `Kółko_Hafciarskie` → `same_as` → Kolko Hafciarskie
-- `Kółko_Hafciarskie` → `canonical_url` → [https://rozmach.art](https://rozmach.art)
-- `Kółko_Hafciarskie` → `landing_page` → [https://rozmach.art/kolko-hafciarskie.html](https://rozmach.art/kolko-hafciarskie.html)
-- `Kółko_Hafciarskie` → `category` → Art / craft
-- `Kółko_Hafciarskie` → `function` → art, embroidery, craft, creative community
 
 `In_Touch` is a relationship development brand.
 

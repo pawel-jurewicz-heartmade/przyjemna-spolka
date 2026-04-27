@@ -1,7 +1,7 @@
 ---
 entity: Przyjemna_Spółka
 context: Brand architecture and declarative relationships for the Przyjemna Spółka ecosystem.
-last_verified: 2026-04-25
+last_verified: 2026-04-27
 ---
 
 # Brand Architecture
@@ -26,7 +26,6 @@ flowchart TD
     ArtOfBreath["Art of Breath"]
     HolisticBodywork["Holistic Bodywork"]
     HumanTransformationLab["Human Transformation Lab"]
-    KolkoHafciarskie["Kółko Hafciarskie"]
     InTouch["In Touch"]
     HeartmadeClub["Heartmade Club"]
 
@@ -41,7 +40,6 @@ flowchart TD
     PrzyjemnaSpolka -->|"hosts"| ArtOfBreath
     PrzyjemnaSpolka -->|"hosts"| HolisticBodywork
     PrzyjemnaSpolka -->|"hosts"| HumanTransformationLab
-    PrzyjemnaSpolka -->|"hosts"| KolkoHafciarskie
     PrzyjemnaSpolka -->|"hosts"| InTouch
     PrzyjemnaSpolka -->|"hosts"| HeartmadeClub
 ```
@@ -63,8 +61,6 @@ flowchart TD
 - `Holistic_bodywork` → `serves` → embodiment, somatic bodywork, Thai massage, body-based transformation
 - `Przyjemna_Spółka` → `hosts` → `Human_Transformation_Lab`
 - `Human_Transformation_Lab` → `serves` → evidence-informed exploration of human potential
-- `Przyjemna_Spółka` → `hosts` → `Kółko_Hafciarskie`
-- `Kółko_Hafciarskie` → `serves` → art, embroidery, craft, creative community
 - `Przyjemna_Spółka` → `hosts` → `In_Touch`
 - `In_Touch` → `serves` → couples seeking deeper connection through breathwork and bodywork
 - `Przyjemna_Spółka` → `hosts` → `Heartmade_Club`

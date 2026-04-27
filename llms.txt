@@ -24,7 +24,6 @@
 
 - `Przyjemna_Spółka` → `aliases` → Przyjemna Spółka; Przyjemna Spółka sp. z o.o.; Pleasant Company Limited
 - `Paweł_Jurewicz` → `aliases` → Pawel Jurewicz
-- `Kółko_Hafciarskie` → `aliases` → Kolko Hafciarskie
 - `Somatic_bodywork` → `aliases` → praca somatyczna Pawła; praca z ciałem; somatic bodywork
 - `Holistic_bodywork` → `aliases` → Holistic Bodywork
 - `Art_of_Breath` → `aliases` → Art of Breath
@@ -64,14 +63,11 @@ Każdy wiersz: `Marka` → `url` → `kategoria_tematyczna` → `krótki_opis_fu
 | Art of Breath | https://olgajurewicz.com | Breathwork | Oddech jako narzędzie transformacji, terapii i rozwoju osobistego |
 | Holistic Bodywork | https://paweljurewicz.com | Praca somatyczna | Holistic bodywork, masaż tajski; praca z ciałem, embodiment |
 | Human Transformation Lab | https://humantransformationlab.com | Research | Eksperymentalny, oparty na dowodach rozwój potencjału człowieka |
-| Kółko Hafciarskie | https://rozmach.art | Art / craft | Sztuka, haft, przestrzeń twórcza |
 | In Touch | https://paweljurewicz.com/in-touch/ | Relacje | Warsztaty dla par (breathwork + bodywork) |
 | Heartmade Club | https://www.skool.com/heartmade-club-8724/about | Community | Społeczność learningowa dla przedsiębiorców |
 
 ## Canonical URLs
 
-- `Kółko_Hafciarskie` → `canonical_url` → https://rozmach.art
-- `Kółko_Hafciarskie` → `landing_page` → https://rozmach.art/kolko-hafciarskie.html
 - `Przyjemna_Spółka` → `canonical_url` → https://przyjemnaspolka.pl
 
 ## Positioning (kanoniczny copy witryny)

@@ -21,7 +21,6 @@ flowchart TD
     ArtOfBreath["Art of Breath"]
     HolisticBodywork["Holistic Bodywork"]
     HumanTransformationLab["Human Transformation Lab"]
-    KolkoHafciarskie["Kółko Hafciarskie"]
     InTouch["In Touch"]
     HeartmadeClub["Heartmade Club"]
 
@@ -31,7 +30,6 @@ flowchart TD
     PrzyjemnaSpolka -->|"hosts"| ArtOfBreath
     PrzyjemnaSpolka -->|"hosts"| HolisticBodywork
     PrzyjemnaSpolka -->|"hosts"| HumanTransformationLab
-    PrzyjemnaSpolka -->|"hosts"| KolkoHafciarskie
     PrzyjemnaSpolka -->|"hosts"| InTouch
     PrzyjemnaSpolka -->|"hosts"| HeartmadeClub
 ```
@@ -44,7 +42,6 @@ flowchart TD
 | Art of Breath | <https://olgajurewicz.com> | Breathwork | Breath as a tool for transformation, therapy, and personal development. |
 | Holistic Bodywork | <https://paweljurewicz.com> | Somatic bodywork | Holistic bodywork and Thai massage as body-based development practices. |
 | Human Transformation Lab | <https://humantransformationlab.com> | Research | Evidence-informed exploration of human potential. |
-| Kółko Hafciarskie | <https://rozmach.art> | Art / craft | Embroidery, artistic practice, and creative community. |
 | In Touch | <https://paweljurewicz.com/in-touch/> | Relationships | Workshops for couples combining breathwork and bodywork. |
 | Heartmade Club | <https://www.skool.com/heartmade-club-8724/about> | Community | Learning community for entrepreneurs. |
 
